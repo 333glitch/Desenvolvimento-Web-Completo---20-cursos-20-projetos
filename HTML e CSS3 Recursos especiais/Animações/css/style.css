@@ -1,3 +1,12 @@
+@keyframe animacao-caixa {
+    from { /* Animação inicial */
+        background: red;
+    }
+    to { /* Animação final */
+        background: green;
+    }
+}
+
 #caixa {
     width: 300px;
     height: 300px;
