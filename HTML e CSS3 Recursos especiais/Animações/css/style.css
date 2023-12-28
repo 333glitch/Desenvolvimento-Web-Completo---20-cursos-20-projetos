@@ -1,9 +1,15 @@
-@keyframe animacao-caixa {
+@keyframes animacao-caixa {
     from { /* Animação inicial */
         background: red;
+        border-radius: 0px;
+        top: 0;
+        left: 0;
     }
     to { /* Animação final */
         background: green;
+        border-radius: 300px;
+        top: 200px;
+        left: 200px;
     }
 }
 
@@ -11,4 +17,11 @@
     width: 300px;
     height: 300px;
     background: red;
+    position: relative;
+    animation-name: animacao-caixa;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    /*animation: animacao-caixa 5s 3s 2 alternate;*/
 }
