@@ -1,0 +1,16 @@
+#caixa {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 8px;
+    background: #009670;
+}
+
+#caixa h1 {
+    color: white;
+    text-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
+}
+/* primeiro valor, referente a horizontal, 
+segundo valor referente a vertical e terceiro valor referente ao blur.
+Quarto é o espalhamento da sombra (não adicionei)
+Quinto valor é o alfa (opacidade)*/
