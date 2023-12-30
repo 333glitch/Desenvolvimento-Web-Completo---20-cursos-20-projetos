@@ -1,0 +1,21 @@
+header {
+    padding: 20px;
+    font-size: 1.2em;
+    background: #fff;
+    border: 2px solid green;
+}
+
+nav {
+    padding: 20px;
+    font-size: 1.2em;
+    background: #fff;
+    border: 2px solid green;
+}
+
+
+footer {
+    padding: 20px;
+    font-size: 1.2em;
+    background: #fff;
+    border: 2px solid green;
+}
