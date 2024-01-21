@@ -10,10 +10,37 @@
 </head>
 
 <body style="margin-bottom: 200px; padding: 16px;">
-    <h1>Teste</h1>
+    <div class="clearfix">
+        <div class="bg-success float-start">Float Left</div>
+
+        <div class="bg-warning float-end">Float Right</div>
+    </div>
+
+    <!-- Posicionamento fixo -top e bottom -->
+    <h1 class="fixed-bottom bg-danger">Título do conteúdo fixo</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi labore ducimus corporis fugit nobis impedit dignissimos minima laboriosam eius veritatis incidunt, blanditiis repellat tempora eveniet alias. Ut sunt ea veniam omnis in dolores qui ipsum quasi deserunt facere dignissimos impedit sapiente nemo, saepe soluta et sit amet, sint earum vel?
+    </p>
+
+    <!--
+        Float responsivo - float-<tela>-<direcao>
+            tela: sm, md, lg, xl, xxl
+            alinhamento: start, end
+    -->
+    <div class="float-sm-end">tela &gt;= 576px *</div><br>
+    <div class="float-md-end">tela &gt;= 768px *</div><br>
+    <div class="float-lg-end">tela &gt;= 992px *</div><br>
+    <div class="float-xl-end">tela &gt;= 1200px *</div><br>
+    <div class="float-xxl-end">tela &gt;= 1400px *</div><br>
 
 
+    <br><br><br><br>
 
+    <!-- Colar no topo (sticky) -->
+    <ul class="list-inline bg-warning sticky-top">
+        <li class="list-inline-item">Item 1</li>
+        <li class="list-inline-item">Item 2</li>
+        <li class="list-inline-item">Item 3</li>
+    </ul>
 
 
 
