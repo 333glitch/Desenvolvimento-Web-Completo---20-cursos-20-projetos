@@ -4,67 +4,64 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap</title>
+    <title>Bootstrap - Alinhamentos de Textos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body style="margin-bottom: 200px; padding: 16px;">
-    <h6 class="h1 display-1">Olá mundo!</h6>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quo in qui, magni nemo sint natus excepturi
-        architecto optio voluptates commodi repellat impedit porro ducimus velit laudantium temporibus. Accusantium
-        praesentium blanditiis aut quas consequuntur architecto! Quam, totam distinctio! Assumenda non reprehenderit
-        laudantium cupiditate tempore rem, magni adipisci odit aliquam laborum!</p>
-    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem molestiae cum molestias, nulla
-        quasi odit neque! Magnam quam ullam incidunt eius accusantium debitis, neque molestiae voluptatem enim aperiam
-        beatae praesentium sed natus aliquam quos dicta. Molestias rem assumenda delectus, porro impedit atque suscipit
-        maiores labore recusandae qui dolore at accusantium.</p>
-    <p class="font-monospace">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio perspiciatis animi aliquam
-        est praesentium officiis, esse possimus similique accusamus quis iste amet libero, quos vero dolorem deserunt
-        debitis provident aperiam eum. Magnam sed deserunt ducimus sint perspiciatis nostrum accusamus asperiores!</p>
-    <p class="fw-bold">Texto Negrito</p>
-    <p class="fw-normal">Texto Normal</p>
-    <p class="fst-italic">Texto Itálico</p>
-    <p class="text-uppercase">Letras Maiúsculas</p>
-    <p class="text-lowercase">Letras Minúsculas</p>
-    <p class="text-capitalize">Primeira Maiúscula</p>
-    <p class="text-end">Direita</p>
-    <p class="text-start">Esquerda</p>
-    <p class="text-center">Centralizado</p>
 
-    <blockquote class="blockquote">
-        <p>Esse é um bloco de citação!</p>
-    </blockquote>
+    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Atque fugiat officia assumenda, est qui adipisci ducimus voluptates velit facere ipsam?
+        Culpa voluptatem quam ex esse nostrum repudiandae rem impedit sint cumque soluta maiores,
+        porro asperiores iste aperiam libero ipsam aspernatur
+        totam illo recusandae non assumenda modi doloremque?</p>
 
-    <blockquote class="blockquote text-end">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis officiis reiciendis reprehenderit
-            maiores, ratione deleniti ipsum quo et doloremque
-            ex repellat autem aut vero. Aut esse tempore natus quis distinctio?</p>
-        <footer class="blockquote-footer">por
-            <cite>Jamilton Damasceno</cite>
-        </footer>
-    </blockquote>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Atque fugiat officia assumenda, est qui adipisci ducimus voluptates velit facere ipsam?
+        Culpa voluptatem quam ex esse nostrum repudiandae rem impedit sint cumque soluta maiores,
+        porro asperiores iste aperiam libero ipsam aspernatur
+        totam illo recusandae non assumenda modi doloremque?</p>
 
-    <p class="text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, placeat.
-        Optio enim ratione facere dolores nisi sequi quaerat, in esse aut veritatis natus molestias assumenda.
-        Est aspernatur dicta nobis quidem soluta odio magnam repudiandae saepe harum doloremque voluptas,
-        minima ducimus placeat,
-        provident expedita pariatur corrupti. Illum rem officia blanditiis ex!</p>
+    <br>
+    <br>
+    <!-- 
+        Alinhamento responsivo - 
+        class text-<tela>-<alinhamento>
+            tela: sm, md, lg, xl
+            alinhamento: start, center, end
+     -->
+    <p class="text-sm-end">tela &gt;= 576px</p><!--Small-->
+    <p class="text-md-end">tela &gt;= 768px</p><!--Medium-->
+    <p class="text-lg-end">tela &gt;= 992px</p><!--Large-->
+    <p class="text-xl-end">tela &gt;= 1200px</p><!--Extra Large-->
 
 
-    <ul class="list-unstyled">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ul>
+    <br>
 
-    <ul class="list-inline">
-        <li class="list-inline-item">Item 1</li>
-        <li class="list-inline-item">Item 2</li>
-        <li class="list-inline-item">Item 3</li>
-    </ul>
+    <!-- Block para Inline -->
+    <h3 class="bg-success d-inline">Olá mundo</h3>
+    <p class="bg-success d-inline">Teste</p>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Inline para Block-->
+     <span class="bg-warning d-block">Olá mundo</span>
+     <span class="bg-warning d-block">Teste</span>
 
 
+     <br>
+     <br><br><br>
+
+
+
+     <div class="bg-warning">
+        <h3 class="bg-success d-inline-block">Olá mundo</h3>
+        <p class="bg-success d-inline-block" style="width: 400px; margin-top: 50px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, quam!</p>
+     </div>
 
 
 
