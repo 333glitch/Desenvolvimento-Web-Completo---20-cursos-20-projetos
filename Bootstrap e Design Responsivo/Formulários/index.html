@@ -11,8 +11,112 @@
 
 <body style="padding-bottom: 200px; padding: 16px;">
 
-    
-    
+    <!-- formulários 
+        classe: form-control-<opcoes>
+        opções: sm, lg
+    -->
+    <form>
+
+        <!-- caixas de texto -->
+        <div class="form-group">
+            <label for="usuario">Usuário</label>
+            <input class="form-control" type="text" id="usuario" placeholder="Digite seu usuário">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control" type="email" id="email" placeholder="Digite seu email" readonly>
+            <small class="form-text">Email será validado</small>
+        </div>
+
+        <!-- select -->
+        <div class="form-group">
+            <label for="estados">Estados</label>
+            <select class="form-control" id="estados">
+                <option>Acre</option>
+                <option>Alagoas</option>
+                <option>Amapá</option>
+                <option>...</option>
+            </select>
+        </div>
+
+        <!-- textarea -->
+        <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea class="form-control" id="mensagem" rows="3"></textarea>
+        </div>
+
+        <!-- file input -->
+        <div class="form-group mb-3">
+            <label for="arquivo" class="form-label">Arquivo</label>
+            <input class="form-control" type="file" id="arquivo">
+        </div>
+
+
+        <!-- custom file input -->
+        <div class="custom-file input-group mb-3">
+            <input class="form-control" type="file" id="arquivo">
+            <label class="input-group-text">Selecione arquivo</label>
+        </div>
+
+        <br><br>
+
+        <!-- range -->
+        <div class="form-group">
+            <label id="form-label" for="range">Satisfação</label>
+            <input class="form-range" type="range" id="range" min="1" max="5">
+        </div>
+
+        <!-- button -->
+        <input class="btn btn-primary" type="submit" value="Salvar">
+
+    </form>
+    <br><br>
+
+
+    <!-- Formulário inline -->
+    <form class="d-flex flex-row">
+        <div class="col-3 me-2">
+            <input class="form-control" type="text" placeholder="Digite seu usuário">
+        </div>
+        <div class="col-3">
+            <input class="form-control" type="password" placeholder="Digite sua senha">
+        </div>
+        <div class="col ms-2">
+            <input type="submit" class="btn btn-primary" value="Logar">
+        </div>
+    </form>
+
+
+
+    <br><br>
+
+    <!-- 
+    Validação de formulário 
+    Classes: is-valid, is-invalid, invalid-feedback
+    -->
+    <form>
+
+        <div class="form-group mb-2">
+            <label for="email-usuario">E-mail</label>
+            <input class="form-control is-valid" type="text" id="email-usuario" placeholder="Digite seu e-mail">
+            <div class="valid-feedback">
+                E-mail válido
+            </div>
+        </div>
+
+        <div class="form-group mb-2">
+            <label for="senha-usuario">Senha</label>
+            <input class="form-control is-invalid" type="email" id="senha-usuario" placeholder="Digite sua senha">
+            <div class="invalid-feedback">
+                Senha inválida
+            </div>
+        </div>
+
+        <input class="btn btn-primary" type="submit" value="Logar">
+
+    </form>
+
 
 
 
