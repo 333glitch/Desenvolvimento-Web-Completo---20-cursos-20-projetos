@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    
+    <script>
+        const theprompt = prompt('What the name to search?')
+        const names = ['Ryan',  'John', 'Oliver'];
+        // Using indexOf to search the name.
+        const assistant = names.indexOf(theprompt);
+        if (assistant === -1) {
+            document.write('The name not found in the array.');
+        }
+        else {
+            document.write(`The name was found in the array, and it is position ${assistant}`);
+        }
+    </script>
+
+</body>
+</html>
