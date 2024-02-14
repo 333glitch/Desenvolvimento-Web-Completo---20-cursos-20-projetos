@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <input type="text" id="text">
+    <input type="button" value="Add" onclick="btnAdd()" id="btnAdd">
+    <input type="button" value="Order" onclick="btnOrder()" id="btnOrder"> 
+    
+    <script>
+        var objects = ['Chair', 'Printer', 'Fork'];
+        var add = document.getElementById('btnAdd');
+        var order = document.getElementById('btnOrder');
+        function btnAdd() {
+            var get = document.getElementById('text').value
+            if (get === undefined || get === '') {
+                document.getElementById('text').value = ''
+                alert('Inform a valid value')
+            }
+            else if (objects.indexOf(get) == -1) {
+                objects.push(get);
+                document.getElementById('text').value = '';
+                console.log(objects)
+            }
+            else {
+                document.getElementById('text').value = ''
+                alert('Object was add before')
+            }
+        }
+        function btnOrder() {
+            if (isNaN) {
+                console.log(objects.sort());
+            }
+            else {
+                console.log(objects.sort(function(a,b){return a-b}))
+            }
+        }
+    </script>
+</body>
+</html>
