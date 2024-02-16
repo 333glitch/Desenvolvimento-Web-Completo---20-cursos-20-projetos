@@ -1,8 +1,12 @@
-var x = 0
-var y = 10
+var total = 0
 
-while (x <= 10) {
-    document.write(x, '</br>')
-    x++
+while (total < 100) {
+    var biscuit = Math.floor(Math.random() * 10) + 1;
+    total += biscuit;
+    if (total > 100) {
+        var difference = total - 100;
+        console.log(difference)
+        total -= difference
+    }
+    document.write('I have ' + total + ' biscuits </br>');
 }
-

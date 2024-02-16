@@ -1,8 +1,14 @@
-var x = 0
-var y = 10
+var ticket = 0
+var participant = 0
 
 do {
-    document.write(x, '</br>')
-    x++
-} while (x <= 10);
-
+    var total
+    total = Math.floor(Math.random() * 5) + 1;
+    ticket += total
+    participant++
+    if (ticket > 100) {
+        difference = ticket - 100
+        ticket -= difference
+    }
+    document.write(`The participant of number: ${participant}, Receives: ${total} tickets and current tickets number sold is: ${ticket}. <br>`)
+} while (ticket < 100);
