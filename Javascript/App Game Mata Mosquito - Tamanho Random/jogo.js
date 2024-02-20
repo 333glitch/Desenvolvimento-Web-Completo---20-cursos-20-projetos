@@ -1,0 +1,40 @@
+var width;
+var height;
+
+function getScreen() {
+  width = window.innerWidth;
+  height = window.innerHeight;
+}
+
+getScreen();
+
+function randomPosition() {
+  var x = Math.floor(Math.random() * width) - 90;
+  var y = Math.floor(Math.random() * height) - 90;
+  x = x < 0 ? 0 : x;
+  y = x < 0 ? 0 : y;
+
+  var mosquito = document.createElement("img");
+  mosquito.src = "imagens/mosca.png";
+  mosquito.className = getRandomClass();
+  mosquito.style.left = `${x}px`;
+  mosquito.style.top = `${y}px`;
+  mosquito.style.position = "absolute";
+  document.body.appendChild(mosquito);
+}
+
+randomPosition();
+
+function getRandomClass() {
+  var classy = Math.floor(Math.random() * 3);
+  switch (classy) {
+    case 0:
+      return "mosquito1";
+    case 1:
+      return "mosquito2";
+    case 2:
+      return "mosquito3";
+    default:
+      return "mosquito1";
+  }
+}
