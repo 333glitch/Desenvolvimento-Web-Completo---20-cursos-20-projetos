@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onresize="getScreen();">
+    
+    <div class="painel">
+        <div class="vidas">
+            <img src="./imagens/coracao_vazio.png">
+            <img src="./imagens/coracao_cheio.png">
+            <img src="./imagens/coracao_cheio.png">
+        </div>
+        <div class="cronometro">Time remaining: ?</div>
+    </div>
+
+
+    <script src="jogo.js">
+    </script>
+    <script>
+        setInterval(() => {
+            randomPosition();
+        }, 1000);
+    </script>
+</body>
+</html>
